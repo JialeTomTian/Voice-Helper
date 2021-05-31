@@ -1,0 +1,21 @@
+{
+  "name": "voice-helper",
+  "version": "1.0.0",
+  "description": "A program to control the computer with your voice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^4.5.1",
+    "@google-cloud/vision": "^2.3.2",
+    "difflib": "^0.2.4",
+    "dotenv": "^10.0.0",
+    "node-record-lpcm16": "^1.0.1",
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.12.3"
+  }
+}
