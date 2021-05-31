@@ -1,9 +1,9 @@
 const robot = require("robotjs");
 
 const screenSize = robot.getScreenSize();
-const visionTool = require("../google/vision");
+const visionTool = require("../google_tools/vision");
 const screenshot = require('screenshot-desktop');
-const detectImage = require("../google/vision");
+const detectImage = require("../google_tools/vision");
 
 const hMoveLarge = screenSize.height / 2;
 const hMoveMedium = screenSize.height / 4;
@@ -72,26 +72,6 @@ const robotCommands = {
       robot.mouseClick(["left"])
     } else {
       robot.mouseClick(["right"])
-    }
-  },
-
-  mouseScrollUp: (size) => {
-    if (size === "large") {
-      robot.scrollMouse(mouse.x, mouse.y + 100)
-    } else if (size == "small") {
-      robot.scrollMouse(mouse.x, mouse.y + 25)
-    } else {
-      robot.scrollMouse(mouse.x, mouse.y + 50);
-    }
-  },
-
-  mouseScrollDown: (size) => {
-    if (size === "large") {
-      robot.scrollMouse(mouse.x, mouse.y - 100)
-    } else if (size == "small") {
-      robot.scrollMouse(mouse.x, mouse.y - 25)
-    } else {
-      robot.scrollMouse(mouse.x, mouse.y - 50);
     }
   },
 

@@ -1,4 +1,4 @@
-const inputStream = require("./google/inputStream");
+const inputStream = require("./google_tools/inputStream");
 const ProcessData = require("./utilities/processData");
 
 function main(){
